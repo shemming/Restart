@@ -55,7 +55,9 @@ namespace Lab10_NET
                     count++;
                 }
                 // reset count to continue looping through processIDs array
+                // sleep so it doesn't eat CPU time
                 count = 0;
+                Thread.Sleep(1000);
             }
 
         }
